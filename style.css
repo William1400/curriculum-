@@ -1,6 +1,12 @@
-body {
+* {
 
-   size: A4; 
+    size: A4; 
+}
+
+.container {
+
+    display: flex;
+    
 }
 
 .image {
@@ -13,45 +19,76 @@ body {
 
 h3 {
     
-    text-transform: capitalize;
-}
-
-.container {
-
-    display: flex;
-    
+    text-transform: uppercase;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 5px;
 }
 
 .aside {
 
     display: flex;
     flex-direction: column;
-    justify-content:first baseline;
+    justify-content:space-evenly;
     align-items: center;
-    gap: 2em;
-
-    width: fit-content;
-    padding: 50px;
+    gap: 50px;
+   
+    padding: 25px;
     background-color: #B0C3D6;
     border: 2px solid black;
 }
 
-h3.aside-content {
+.aside-content {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
 
-    align-items: right;
+.page {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+    
+    padding: 25px;
+    border: 2px solid black;
+
+}
+
+.title {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    font-size: 20px;
+    font-style: normal;
+    border: 2px solid black;
+
 }
 
 .page-content {
 
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
-    align-items: flex-start;
+    gap: 10px;
 
-    padding: 50px;
-    width: 5px;
-    height: 5px;
+    padding: 25px;
+
+}
+
+.table {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15em;
+    
+    padding: 20px;
     border: 2px solid black;
-    width: fit-content;
-    height: 100%;
 }
