@@ -1,28 +1,68 @@
-* {
+body {
 
-    size: A4; 
+    max-width: auto;
+    max-height: auto;
+    border: 3px solid black;
 }
 
-.container {
+img {
 
-    display: flex;
-    
-}
+    max-width: 100%;
+    max-height: 100%;
 
-.image {
-
-    border: 2px solid white;
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
+    border-radius: 10px;
+    border: 3px solid white;
 }
 
 h3 {
     
     text-transform: uppercase;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
+    padding: 10px;
+}
+
+hr {
+
+    display: block;
+    height: 2px;
+    width: 30em;
+    border: 0;
+    border-top: 2px solid #B0C3D6;
+    margin: 1em 0;
+}
+
+ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+p {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container {
+
+    display: flex;
+    justify-content: flex;
+    align-items: flex;
+    align-content: flex;
+    gap: 10px;
+
+
+} 
+
+.image {
+
+    width: 200px;
+    height: 205px;
+    
+    border-radius: 10px;
     padding: 5px;
+    
 }
 
 .aside {
@@ -31,31 +71,38 @@ h3 {
     flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
-    gap: 50px;
+    /* gap: 10px; */
    
-    padding: 25px;
+    padding: 10px;
     background-color: #B0C3D6;
-    border: 2px solid black;
+    
 }
 
 .aside-content {
    
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    /* gap: 20px; */
     
 }
 
-.page {
-
+.aside h3 {
+     
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 80px;
-    
-    padding: 25px;
-    border: 2px solid black;
+    justify-content: center;
+    align-items: flex-end;
+}
 
+.aside hr {
+
+    display: block;
+    height: 2px;
+    width: 15em;
+    border: 0;
+    border-top: 2px solid #fff;
+    margin: 1em 0;
 }
 
 .title {
@@ -65,21 +112,29 @@ h3 {
     justify-content: center;
     align-items: center;
 
-    padding: 10px;
+    padding-top: 150px;
     font-size: 20px;
     font-style: normal;
-    border: 2px solid black;
+   
+}
 
+.page {
+
+    display: flex;
+    flex-direction: column;
+  
+    /* gap: 50px; */
+    
+    padding: 10px;
 }
 
 .page-content {
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
 
-    padding: 25px;
-
+    padding: 30px;
 }
 
 .table {
@@ -87,8 +142,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: flex;
     gap: 15em;
-    
-    padding: 20px;
-    border: 2px solid black;
+
+    padding: 0;
 }
